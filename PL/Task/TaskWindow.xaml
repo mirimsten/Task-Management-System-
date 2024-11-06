@@ -1,0 +1,107 @@
+﻿<Window x:Class="PL.Task.TaskWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PL.Task"
+        mc:Ignorable="d"
+        Title="TaskWindow" Height="600" Width="1000"
+        DataContext="{Binding CurrentTask, RelativeSource={RelativeSource Self}, Mode=TwoWay}"
+        Background="{StaticResource OurBackgroundBrush}"     >
+    <Grid>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="10*" />
+            <ColumnDefinition Width="55*" />
+            <ColumnDefinition Width="60*" />
+            <ColumnDefinition Width="14*" />
+            <ColumnDefinition Width="55*" />
+            <ColumnDefinition Width="60*" />
+            <ColumnDefinition Width="14*" />
+            <ColumnDefinition Width="55*" />
+            <ColumnDefinition Width="60*" />
+            <ColumnDefinition Width="10*" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="20*" />
+            <RowDefinition Height="40*" />
+            <RowDefinition Height="17*" />
+            <RowDefinition Height="40*" />
+            <RowDefinition Height="20*" />
+            <RowDefinition Height="40*" />
+            <RowDefinition Height="20*" />
+            <RowDefinition Height="40*" />
+            <RowDefinition Height="20*" />
+            <RowDefinition Height="40*" />
+            <RowDefinition Height="20*" />
+            <RowDefinition Height="80*"/>
+            <RowDefinition Height="40*" />
+            <RowDefinition Height="20*" />
+            <RowDefinition Height="40*" />
+            <RowDefinition Height="20*" />
+            <RowDefinition Height="40*" />
+            <RowDefinition Height="25*" />
+            <RowDefinition Height="40*" />
+            <RowDefinition Height="15*" />
+        </Grid.RowDefinitions>
+
+        <Label Grid.Column="3" Grid.ColumnSpan="3" Grid.Row="1" Content="TASK" HorizontalAlignment="Center" VerticalAlignment="Center"  FontSize="18" FontWeight="Bold"/>
+
+        <Label Grid.Column="1" Grid.Row="3" Content="Id:" HorizontalAlignment="Stretch"  VerticalAlignment="Center"/>
+        <Label Grid.Column="1" Grid.Row="5" Content="Alias:" HorizontalAlignment="Stretch" VerticalAlignment="Center"/>
+        <Label Grid.Column="1" Grid.Row="7" Content="Description:" HorizontalAlignment="Stretch" VerticalAlignment="Center"/>
+        <Label Grid.Column="1" Grid.Row="9" Content="Dependencies:" HorizontalAlignment="Stretch" VerticalAlignment="Center"/>
+
+        <Label Grid.Column="4" Grid.Row="3" Content="Status:" HorizontalAlignment="Stretch" VerticalAlignment="Center"/>
+        <Label Grid.Column="4" Grid.Row="5" Content="CreatedAtDate:" HorizontalAlignment="Stretch" VerticalAlignment="Center"/>
+        <Label Grid.Column="4" Grid.Row="7" Content="StartDate:" HorizontalAlignment="Stretch" VerticalAlignment="Center"/>
+        <Label Grid.Column="4" Grid.Row="9" Content="SchedualDate:" HorizontalAlignment="Stretch" VerticalAlignment="Center"/>
+        <Label Grid.Column="4" Grid.Row="12" Content="Duration:" HorizontalAlignment="Stretch" VerticalAlignment="Center"/>
+        <Label Grid.Column="4" Grid.Row="14" Content="ForecastDate:" HorizontalAlignment="Stretch" VerticalAlignment="Center"/>
+        <Label Grid.Column="4" Grid.Row="16" Content="DeadlineDate:" HorizontalAlignment="Stretch" VerticalAlignment="Center"/>
+
+        <Label Grid.Column="7" Grid.Row="3" Content="CompleteDate:" HorizontalAlignment="Stretch" VerticalAlignment="Center"/>
+        <Label Grid.Column="7" Grid.Row="5" Content="Deliverables:" HorizontalAlignment="Stretch" VerticalAlignment="Center"/>
+        <Label Grid.Column="7" Grid.Row="7" Content="Remarks:" HorizontalAlignment="Stretch" VerticalAlignment="Center"/>
+        <Label Grid.Column="7" Grid.Row="9" Content="Engineer:" HorizontalAlignment="Stretch" VerticalAlignment="Center" Visibility="{Binding ProjectRunning,Mode=OneWay,RelativeSource={RelativeSource AncestorType={x:Type local:TaskWindow}}, Converter={StaticResource ConvertBoolToVisibilityKey}}"/>
+        <Label Grid.Column="7" Grid.Row="12" Content="Id:" HorizontalAlignment="Stretch" VerticalAlignment="Center"/>
+        <Label Grid.Column="7" Grid.Row="14" Content="Name:" HorizontalAlignment="Stretch" VerticalAlignment="Center"/>
+        <Label Grid.Column="7" Grid.Row="16" Content="Complexity:" HorizontalAlignment="Stretch" VerticalAlignment="Center"/>
+
+        <TextBox x:Name="Id" Grid.Column="2" Grid.Row="3" IsEnabled="{Binding Id, Mode=OneTime, Converter={StaticResource ConvertIdToIsEnabledKey}}" Text="{Binding Id, Mode=TwoWay, NotifyOnValidationError=true,  ValidatesOnExceptions=true}" HorizontalAlignment="Stretch" TextWrapping="Wrap" VerticalAlignment="Stretch"/>
+        <TextBox Grid.Column="2" Grid.Row="5" Text="{Binding Alias, Mode=TwoWay, NotifyOnValidationError=true,  ValidatesOnExceptions=true}" HorizontalAlignment="Stretch" TextWrapping="Wrap" VerticalAlignment="Stretch"/>
+        <TextBox Grid.Column="2" Grid.Row="7" Text="{Binding Description, Mode=TwoWay, NotifyOnValidationError=true,  ValidatesOnExceptions=true}" HorizontalAlignment="Stretch" TextWrapping="Wrap" VerticalAlignment="Stretch"/>
+        <ListView  Grid.Column="1" Grid.Row="9" Grid.ColumnSpan="2" DisplayMemberPath="Description" 
+                    ItemsSource="{Binding DependenedTaskList, RelativeSource={RelativeSource AncestorType={x:Type local:TaskWindow}}}"
+                    HorizontalAlignment="Stretch" Grid.RowSpan="3" VerticalAlignment="Center"/>
+        <Button Grid.Column="1" Margin="3" Grid.Row="12" Content="Add depended task" Click="AddDependedTask_Click"/>
+
+        <TextBlock Grid.Column="5" Grid.Row="3"  
+        Text="{Binding Status, Mode=OneTime}" HorizontalAlignment="Stretch"  VerticalAlignment="Stretch"/>
+        <Label Grid.Column="5" Grid.Row="5" Content="{Binding CreatedAtDate, Mode=OneTime, StringFormat={}{0:dd/MM/yyyy}}"  HorizontalAlignment="Stretch" VerticalAlignment="Center"/>
+        <Border Grid.Column="5" Grid.Row="7" Visibility="{Binding ProjectRunning ,RelativeSource={RelativeSource AncestorType={x:Type local:TaskWindow}}, Converter={StaticResource ConvertBoolToVisibilityKey}}">
+            <DatePicker  Text="{Binding StartDate, Mode=TwoWay,StringFormat={}{0:dd/MM/yyyy}}" HorizontalAlignment="Stretch" VerticalAlignment="Center" />
+        </Border>
+        <Label Grid.Column="5" Grid.Row="9" Content="{Binding SchedualDate, Mode=OneWay,StringFormat={}{0:dd/MM/yyyy}}"  HorizontalAlignment="Stretch" VerticalAlignment="Center" Visibility="{Binding ProjectRunning ,RelativeSource={RelativeSource AncestorType={x:Type local:TaskWindow}}, Converter={StaticResource ConvertBoolToVisibilityKey}}"/>
+        <TextBox Grid.Column="5" Grid.Row="12" Text="{Binding TaskDuration,RelativeSource={RelativeSource AncestorType={x:Type local:TaskWindow}}, Mode=TwoWay}" HorizontalAlignment="Stretch" VerticalAlignment="Center"/>
+        <StackPanel Orientation="Horizontal" Grid.Column="6" Grid.Row="12" HorizontalAlignment="Center">
+                    <Button  Content="+"  Click="AddDurationButton_Click" HorizontalAlignment="Center" VerticalAlignment="Center" Background="{x:Null}" BorderBrush="#FF2FE8CD" Height="15" FontWeight="UltraBold"/>
+            <Button Content="-"  Click="SubDurationButton_Click" HorizontalAlignment="Center" VerticalAlignment="Center" Background="{x:Null}" BorderBrush="#FF2FE8CD" Height="15" FontWeight="UltraBold" Margin="2,0,0,0"/>
+        </StackPanel>
+
+        <Label Grid.Column="5" Grid.Row="14" Content="{Binding ForecastDate, Mode=TwoWay,StringFormat={}{0:dd/MM/yyyy}}" HorizontalAlignment="Stretch" VerticalAlignment="Center" Visibility="{Binding ProjectRunning ,RelativeSource={RelativeSource AncestorType={x:Type local:TaskWindow}}, Converter={StaticResource ConvertBoolToVisibilityKey}}"/>
+        <Label Grid.Column="5" Grid.Row="16" Content="{Binding DeadlineDate, Mode=TwoWay,StringFormat={}{0:dd/MM/yyyy}}" HorizontalAlignment="Stretch" VerticalAlignment="Center" Visibility="{Binding ProjectRunning ,RelativeSource={RelativeSource AncestorType={x:Type local:TaskWindow}}, Converter={StaticResource ConvertBoolToVisibilityKey}}"/>
+        <Border Grid.Column="8" Grid.Row="3" Visibility="{Binding ProjectRunning ,RelativeSource={RelativeSource AncestorType={x:Type local:TaskWindow}}, Converter={StaticResource ConvertBoolToVisibilityKey}}">
+            <DatePicker Text="{Binding CompleteDate, Mode=TwoWay,StringFormat={}{0:dd/MM/yyyy}}" HorizontalAlignment="Stretch" VerticalAlignment="Center" Visibility="{Binding ProjectRunning ,RelativeSource={RelativeSource AncestorType={x:Type local:TaskWindow}}, Converter={StaticResource ConvertBoolToVisibilityKey}}"/>
+        </Border>
+        <TextBox Grid.Column="8" Grid.Row="5" Text="{Binding Deliverables, Mode=TwoWay}" HorizontalAlignment="Stretch" TextWrapping="Wrap" VerticalAlignment="Stretch"/>
+        <TextBox Grid.Column="8" Grid.Row="7" Text="{Binding Remarks, Mode=TwoWay}" HorizontalAlignment="Stretch" TextWrapping="Wrap" VerticalAlignment="Stretch"/>
+        <TextBox Grid.Column="8" Grid.Row="12" Text="{Binding Engineer.Id, Mode=TwoWay}" HorizontalAlignment="Stretch" TextWrapping="Wrap" VerticalAlignment="Stretch"/>
+        <TextBox Grid.Column="8" Grid.Row="14" Text="{Binding Engineer.Name, Mode=TwoWay}" HorizontalAlignment="Stretch" TextWrapping="Wrap" VerticalAlignment="Stretch"/>
+        <ComboBox Grid.Column="8" Grid.Row="16" ItemsSource="{Binding Source={StaticResource LevelsCollectionKey}}" 
+        SelectedValue="{Binding Complexity, Mode=TwoWay, NotifyOnValidationError=true, 
+        ValidatesOnExceptions=true}" HorizontalAlignment="Stretch"  VerticalAlignment="Stretch"/>
+
+        <Button Grid.Column="4" Grid.ColumnSpan="2" Grid.Row="17" Content="{Binding Id, Mode=OneTime, Converter={StaticResource ConverIdToContentKey}}"  Click="BtnAddOrUpdateTask_Click" Margin="61,22,58,0" Grid.RowSpan="2"/>
+    </Grid>
+</Window>

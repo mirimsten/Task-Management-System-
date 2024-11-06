@@ -1,0 +1,81 @@
+﻿<Window x:Class="PL.Manager"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PL"
+        mc:Ignorable="d"
+        DataContext="{Binding RelativeSource={RelativeSource Mode=Self}}"
+        Background="{StaticResource OurBackgroundBrush}"
+        Title="Manager" Height="450" Width="800">
+    <Window.Resources>
+        <Style TargetType="Button">
+            <Setter Property="Width" Value="200"/>
+            <Setter Property="Height" Value="70"/>
+            <Setter Property="Margin" Value="20,10,20,10"/>
+            <Setter Property="VerticalAlignment" Value="Center"/>
+            <Setter Property="BorderThickness" Value="0"/>
+            <Setter Property="Background">
+                <Setter.Value>
+                    <SolidColorBrush Color="#FF3EE2E5" Opacity="0.5"/>
+                </Setter.Value>
+            </Setter>
+            <Setter Property="FontSize" Value="17"/>
+            <Setter Property="FontFamily" Value="Comic Sans MS"/>
+            <Style.Triggers>
+                <Trigger Property="IsMouseOver" Value="True">
+                    <Setter Property="FontWeight" Value="Bold" />
+                    <Setter Property="BorderThickness" Value="3"/>
+                    <Setter Property="BorderBrush" Value="Black"/>
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+        <Style TargetType="DatePicker">
+            <Setter Property="FontSize" Value="15"/>
+            <Setter Property="FontFamily" Value="Comic Sans MS"/>
+            <Setter Property="Height" Value="30"/>
+            <Setter Property="VerticalAlignment" Value="Center"/>
+            <Setter Property="HorizontalAlignment" Value="Stretch"/>
+            <Setter Property="Background" Value="White"/>
+            <Setter Property="Width" Value="150"/>
+            <Setter Property="Margin" Value="20,10,20,10"/>
+       </Style>
+    </Window.Resources>
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="20*"/>
+            <RowDefinition Height="80*"/>
+        </Grid.RowDefinitions>
+        <Border Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <Label Content="Hello! Welcome to the project management menu:"  FontWeight="Bold" FontSize="20" />
+        </Border>
+        <WrapPanel Grid.Row="1" VerticalAlignment="Center" HorizontalAlignment="Center" ItemWidth="NaN">
+            <Button Content="Engineers"  Click="EngineersListButton_Click"/>
+            <Button Content="Tasks" Click="TasksListButton_Click"/>
+            <Button Content="Milestones"  Click="MilestonesButton_Click"/>
+            <Button Content="Reset" Click="ButtonReset_Click"  />
+            <Button Content="Gant chart" Click="ButtonGantt_Click"/>
+            <Button Content="Start project" Click="ButtonGetDates_Click" Visibility="{Binding ScheduleMode}" />
+            <Button Content="Initialization" Click="ButtonInitialization_Click" Visibility="{Binding InalizationMode}"/>
+        </WrapPanel>
+        <Grid Visibility="{Binding InputMode}" Grid.RowSpan="3" >
+            <Grid Background="Black">
+                <Border Background="Black">
+                    <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Width="200">
+                        <StackPanel.Background>
+                            <SolidColorBrush Color="#FF3DE1E5" Opacity="0.78"/>
+                        </StackPanel.Background>
+                        <Label Content="Let's create our schedule!" Foreground="Black" FontSize="14.5" HorizontalAlignment="Center"/>
+                        <Label Content="Choose the start date:" Foreground="Black" FontSize="12" HorizontalAlignment="Center"/>
+                        <DatePicker SelectedDate="{Binding StartDate, Mode=TwoWay}"/>
+                        <Label Content="Choose the end date:" Foreground="Black" FontSize="12" HorizontalAlignment="Center"/>
+                        <DatePicker SelectedDate="{Binding EndDate, Mode=TwoWay}"/>
+                        <Button  Content="Start!" Width="70" Height="20" HorizontalAlignment="Center" Background="Black" Foreground="White" FontSize="10" Click="CreateSchedualButton_Click"/>
+                    </StackPanel>
+                </Border>
+            </Grid>
+        </Grid>
+    </Grid>
+
+</Window>

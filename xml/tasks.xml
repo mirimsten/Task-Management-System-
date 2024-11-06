@@ -1,0 +1,565 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfTask xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Task>
+    <Id>28</Id>
+    <Alias>Start</Alias>
+    <IsMilestone>true</IsMilestone>
+    <CreatedAtDate>2024-04-09T20:21:25.9831514+03:00</CreatedAtDate>
+    <SchedualDate>2024-04-09T20:20:21.5603644+03:00</SchedualDate>
+    <DeadlineDate>2024-04-14T00:00:00</DeadlineDate>
+    <EngineerId>0</EngineerId>
+    <ComplexityLevel>Beginner</ComplexityLevel>
+  </Task>
+  <Task>
+    <Id>29</Id>
+    <Alias>M1</Alias>
+    <IsMilestone>true</IsMilestone>
+    <CreatedAtDate>2024-04-09T20:21:25.9870585+03:00</CreatedAtDate>
+    <SchedualDate>2024-04-11T20:20:21.5603644+03:00</SchedualDate>
+    <DeadlineDate>2024-04-16T00:00:00</DeadlineDate>
+    <EngineerId>0</EngineerId>
+    <ComplexityLevel>Beginner</ComplexityLevel>
+  </Task>
+  <Task>
+    <Id>2</Id>
+    <Description>Create Wireframes</Description>
+    <Alias>Design the basic layout and structure of the application.</Alias>
+    <IsMilestone>false</IsMilestone>
+    <CreatedAtDate>2024-03-27T20:21:06.5279625+02:00</CreatedAtDate>
+    <SchedualDate>2024-04-11T20:20:21.5603644+03:00</SchedualDate>
+    <Duration>P1D</Duration>
+    <DeadlineDate>2024-04-18T00:00:00</DeadlineDate>
+    <Deliverables>Wireframes</Deliverables>
+    <EngineerId xsi:nil="true" />
+    <ComplexityLevel>Beginner</ComplexityLevel>
+  </Task>
+  <Task>
+    <Id>3</Id>
+    <Description>Develop Database Schema</Description>
+    <Alias>Design the database structure for the application.</Alias>
+    <IsMilestone>false</IsMilestone>
+    <CreatedAtDate>2024-03-30T20:21:06.5383115+03:00</CreatedAtDate>
+    <SchedualDate>2024-04-11T20:20:21.5603644+03:00</SchedualDate>
+    <Duration>P2D</Duration>
+    <DeadlineDate>2024-04-18T00:00:00</DeadlineDate>
+    <Deliverables>Database Schema</Deliverables>
+    <EngineerId xsi:nil="true" />
+    <ComplexityLevel>Expert</ComplexityLevel>
+  </Task>
+  <Task>
+    <Id>30</Id>
+    <Alias>M2</Alias>
+    <IsMilestone>true</IsMilestone>
+    <CreatedAtDate>2024-04-09T20:21:26.0027926+03:00</CreatedAtDate>
+    <SchedualDate>2024-04-13T20:20:21.5603644+03:00</SchedualDate>
+    <DeadlineDate>2024-04-18T00:00:00</DeadlineDate>
+    <EngineerId>0</EngineerId>
+    <ComplexityLevel>Beginner</ComplexityLevel>
+  </Task>
+  <Task>
+    <Id>4</Id>
+    <Description>Set Up Version Control</Description>
+    <Alias>Implement version control system (e.g., Git) for collaborative development.</Alias>
+    <IsMilestone>false</IsMilestone>
+    <CreatedAtDate>2024-04-03T20:21:06.5476236+03:00</CreatedAtDate>
+    <SchedualDate>2024-04-13T20:20:21.5603644+03:00</SchedualDate>
+    <Duration>P1D</Duration>
+    <DeadlineDate>2024-04-19T00:00:00</DeadlineDate>
+    <Deliverables>Version Control System</Deliverables>
+    <EngineerId xsi:nil="true" />
+    <ComplexityLevel>Advanced</ComplexityLevel>
+  </Task>
+  <Task>
+    <Id>31</Id>
+    <Alias>M3</Alias>
+    <IsMilestone>true</IsMilestone>
+    <CreatedAtDate>2024-04-09T20:21:26.024972+03:00</CreatedAtDate>
+    <SchedualDate>2024-04-14T20:20:21.5603644+03:00</SchedualDate>
+    <DeadlineDate>2024-04-19T00:00:00</DeadlineDate>
+    <EngineerId>0</EngineerId>
+    <ComplexityLevel>Beginner</ComplexityLevel>
+  </Task>
+  <Task>
+    <Id>6</Id>
+    <Description>Design UI/UX</Description>
+    <Alias>Create a visually appealing and user-friendly interface design.</Alias>
+    <IsMilestone>false</IsMilestone>
+    <CreatedAtDate>2024-04-04T20:21:06.5656309+03:00</CreatedAtDate>
+    <SchedualDate>2024-04-14T20:20:21.5603644+03:00</SchedualDate>
+    <Duration>P1D</Duration>
+    <DeadlineDate>2024-04-20T00:00:00</DeadlineDate>
+    <Deliverables>UI/UX Designs</Deliverables>
+    <EngineerId xsi:nil="true" />
+    <ComplexityLevel>Beginner</ComplexityLevel>
+  </Task>
+  <Task>
+    <Id>5</Id>
+    <Description>Implement User Authentication</Description>
+    <Alias>Set up user authentication and authorization functionality.</Alias>
+    <IsMilestone>false</IsMilestone>
+    <CreatedAtDate>2024-04-04T20:21:06.5574878+03:00</CreatedAtDate>
+    <SchedualDate>2024-04-14T20:20:21.5603644+03:00</SchedualDate>
+    <Duration>P1D</Duration>
+    <DeadlineDate>2024-04-21T00:00:00</DeadlineDate>
+    <Deliverables>User Authentication System</Deliverables>
+    <EngineerId xsi:nil="true" />
+    <ComplexityLevel>AdvancedBeginner</ComplexityLevel>
+  </Task>
+  <Task>
+    <Id>32</Id>
+    <Alias>M4</Alias>
+    <IsMilestone>true</IsMilestone>
+    <CreatedAtDate>2024-04-09T20:21:26.0402899+03:00</CreatedAtDate>
+    <SchedualDate>2024-04-15T20:20:21.5603644+03:00</SchedualDate>
+    <DeadlineDate>2024-04-20T00:00:00</DeadlineDate>
+    <EngineerId>0</EngineerId>
+    <ComplexityLevel>Beginner</ComplexityLevel>
+  </Task>
+  <Task>
+    <Id>7</Id>
+    <Description>Develop Frontend</Description>
+    <Alias>Write code for the client-side/frontend of the application.</Alias>
+    <IsMilestone>false</IsMilestone>
+    <CreatedAtDate>2024-04-07T20:21:06.5770254+03:00</CreatedAtDate>
+    <SchedualDate>2024-04-15T20:20:21.5603644+03:00</SchedualDate>
+    <Duration>P1D</Duration>
+    <DeadlineDate>2024-04-22T00:00:00</DeadlineDate>
+    <Deliverables>Frontend Codebase</Deliverables>
+    <EngineerId xsi:nil="true" />
+    <ComplexityLevel>AdvancedBeginner</ComplexityLevel>
+  </Task>
+  <Task>
+    <Id>8</Id>
+    <Description>Develop Backend</Description>
+    <Alias>Write code for the server-side/backend of the application.</Alias>
+    <IsMilestone>false</IsMilestone>
+    <CreatedAtDate>2024-04-08T20:21:06.5969328+03:00</CreatedAtDate>
+    <SchedualDate>2024-04-15T20:20:21.5603644+03:00</SchedualDate>
+    <Duration>P2D</Duration>
+    <DeadlineDate>2024-04-22T00:00:00</DeadlineDate>
+    <Deliverables>Backend Codebase</Deliverables>
+    <EngineerId xsi:nil="true" />
+    <ComplexityLevel>Beginner</ComplexityLevel>
+  </Task>
+  <Task>
+    <Id>33</Id>
+    <Alias>M5</Alias>
+    <IsMilestone>true</IsMilestone>
+    <CreatedAtDate>2024-04-09T20:21:26.0581673+03:00</CreatedAtDate>
+    <SchedualDate>2024-04-17T20:20:21.5603644+03:00</SchedualDate>
+    <DeadlineDate>2024-04-22T00:00:00</DeadlineDate>
+    <EngineerId>0</EngineerId>
+    <ComplexityLevel>Beginner</ComplexityLevel>
+  </Task>
+  <Task>
+    <Id>9</Id>
+    <Description>Integrate Frontend and Backend</Description>
+    <Alias>Combine frontend and backend components to create a functional application.</Alias>
+    <IsMilestone>false</IsMilestone>
+    <CreatedAtDate>2024-04-07T20:21:06.607181+03:00</CreatedAtDate>
+    <SchedualDate>2024-04-17T20:20:21.5603644+03:00</SchedualDate>
+    <Duration>P3D</Duration>
+    <DeadlineDate>2024-04-25T00:00:00</DeadlineDate>
+    <Deliverables>Integrated Application</Deliverables>
+    <EngineerId xsi:nil="true" />
+    <ComplexityLevel>AdvancedBeginner</ComplexityLevel>
+  </Task>
+  <Task>
+    <Id>36</Id>
+    <Alias>M8</Alias>
+    <IsMilestone>true</IsMilestone>
+    <CreatedAtDate>2024-04-09T20:21:26.1011626+03:00</CreatedAtDate>
+    <SchedualDate>2024-04-20T20:20:21.5603644+03:00</SchedualDate>
+    <DeadlineDate>2024-04-25T00:00:00</DeadlineDate>
+    <EngineerId>0</EngineerId>
+    <ComplexityLevel>Beginner</ComplexityLevel>
+  </Task>
+  <Task>
+    <Id>13</Id>
+    <Description>Conduct System Testing</Description>
+    <Alias>Test the entire system to ensure all components work together seamlessly.</Alias>
+    <IsMilestone>false</IsMilestone>
+    <CreatedAtDate>2024-04-01T20:21:06.6624226+03:00</CreatedAtDate>
+    <SchedualDate>2024-04-20T20:20:21.5603644+03:00</SchedualDate>
+    <Duration>P2D</Duration>
+    <DeadlineDate>2024-04-27T00:00:00</DeadlineDate>
+    <Deliverables>System Test Reports</Deliverables>
+    <EngineerId xsi:nil="true" />
+    <ComplexityLevel>Intermediate</ComplexityLevel>
+  </Task>
+  <Task>
+    <Id>14</Id>
+    <Description>Optimize Performance</Description>
+    <Alias>Optimize code and database queries for better performance.</Alias>
+    <IsMilestone>false</IsMilestone>
+    <CreatedAtDate>2024-04-02T20:21:06.6710574+03:00</CreatedAtDate>
+    <SchedualDate>2024-04-22T20:20:21.5603644+03:00</SchedualDate>
+    <Duration>P3D</Duration>
+    <DeadlineDate>2024-04-30T00:00:00</DeadlineDate>
+    <Deliverables>Optimized Application</Deliverables>
+    <EngineerId xsi:nil="true" />
+    <ComplexityLevel>Intermediate</ComplexityLevel>
+  </Task>
+  <Task>
+    <Id>15</Id>
+    <Description>Create Documentation</Description>
+    <Alias>Document code, APIs, and system architecture for future reference.</Alias>
+    <IsMilestone>false</IsMilestone>
+    <CreatedAtDate>2024-03-29T20:21:06.6819099+03:00</CreatedAtDate>
+    <SchedualDate>2024-04-22T20:20:21.5603644+03:00</SchedualDate>
+    <Duration>P3D</Duration>
+    <DeadlineDate>2024-04-30T00:00:00</DeadlineDate>
+    <Deliverables>Documentation</Deliverables>
+    <EngineerId xsi:nil="true" />
+    <ComplexityLevel>Intermediate</ComplexityLevel>
+  </Task>
+  <Task>
+    <Id>17</Id>
+    <Description>User Acceptance Testing (UAT)</Description>
+    <Alias>Allow end-users to test the application and provide feedback.</Alias>
+    <IsMilestone>false</IsMilestone>
+    <CreatedAtDate>2024-03-31T20:21:06.7051288+03:00</CreatedAtDate>
+    <SchedualDate>2024-04-25T20:20:21.5603644+03:00</SchedualDate>
+    <Duration>P1D</Duration>
+    <DeadlineDate>2024-05-04T00:00:00</DeadlineDate>
+    <Deliverables>UAT Reports</Deliverables>
+    <EngineerId xsi:nil="true" />
+    <ComplexityLevel>Intermediate</ComplexityLevel>
+  </Task>
+  <Task>
+    <Id>16</Id>
+    <Description>Deploy to Testing Environment</Description>
+    <Alias>Deploy the application to a testing environment for user acceptance testing.</Alias>
+    <IsMilestone>false</IsMilestone>
+    <CreatedAtDate>2024-03-29T20:21:06.6946842+03:00</CreatedAtDate>
+    <SchedualDate>2024-04-25T20:20:21.5603644+03:00</SchedualDate>
+    <Duration>P3D</Duration>
+    <DeadlineDate>2024-05-03T00:00:00</DeadlineDate>
+    <Deliverables>Testing Environment Deployment</Deliverables>
+    <EngineerId xsi:nil="true" />
+    <ComplexityLevel>Expert</ComplexityLevel>
+  </Task>
+  <Task>
+    <Id>18</Id>
+    <Description>Address UAT Feedback</Description>
+    <Alias>Incorporate user feedback and make necessary adjustments.</Alias>
+    <IsMilestone>false</IsMilestone>
+    <CreatedAtDate>2024-03-27T20:21:06.7191954+02:00</CreatedAtDate>
+    <SchedualDate>2024-04-26T20:20:21.5603644+03:00</SchedualDate>
+    <Duration>P1D</Duration>
+    <DeadlineDate>2024-05-05T00:00:00</DeadlineDate>
+    <Deliverables>Revised Application</Deliverables>
+    <EngineerId xsi:nil="true" />
+    <ComplexityLevel>Intermediate</ComplexityLevel>
+  </Task>
+  <Task>
+    <Id>19</Id>
+    <Description>Perform Security Audit</Description>
+    <Alias>Conduct a security audit to identify and address vulnerabilities.</Alias>
+    <IsMilestone>false</IsMilestone>
+    <CreatedAtDate>2024-04-05T20:21:06.7357059+03:00</CreatedAtDate>
+    <SchedualDate>2024-04-28T20:20:21.5603644+03:00</SchedualDate>
+    <Duration>P2D</Duration>
+    <DeadlineDate>2024-05-05T00:00:00</DeadlineDate>
+    <Deliverables>Security Audit Report</Deliverables>
+    <EngineerId xsi:nil="true" />
+    <ComplexityLevel>Advanced</ComplexityLevel>
+  </Task>
+  <Task>
+    <Id>20</Id>
+    <Description>Prepare for Production Deployment</Description>
+    <Alias>Finalize configurations and prepare the application for production deployment.</Alias>
+    <IsMilestone>false</IsMilestone>
+    <CreatedAtDate>2024-04-08T20:21:06.7483628+03:00</CreatedAtDate>
+    <SchedualDate>2024-04-30T20:20:21.5603644+03:00</SchedualDate>
+    <Duration>P2D</Duration>
+    <DeadlineDate>2024-05-07T00:00:00</DeadlineDate>
+    <Deliverables>Production-ready Application</Deliverables>
+    <EngineerId xsi:nil="true" />
+    <ComplexityLevel>Advanced</ComplexityLevel>
+  </Task>
+  <Task>
+    <Id>21</Id>
+    <Description>Deploy to Production</Description>
+    <Alias>Deploy the application to the production environment for public use.</Alias>
+    <IsMilestone>false</IsMilestone>
+    <CreatedAtDate>2024-04-07T20:21:06.7617542+03:00</CreatedAtDate>
+    <SchedualDate>2024-05-02T20:20:21.5603644+03:00</SchedualDate>
+    <Duration>P2D</Duration>
+    <DeadlineDate>2024-05-09T00:00:00</DeadlineDate>
+    <Deliverables>Production Deployment</Deliverables>
+    <EngineerId xsi:nil="true" />
+    <ComplexityLevel>AdvancedBeginner</ComplexityLevel>
+  </Task>
+  <Task>
+    <Id>22</Id>
+    <Description>Monitor Application Performance</Description>
+    <Alias>Set up monitoring tools to track and analyze application performance.</Alias>
+    <IsMilestone>false</IsMilestone>
+    <CreatedAtDate>2024-04-09T20:21:06.7727155+03:00</CreatedAtDate>
+    <SchedualDate>2024-05-04T20:20:21.5603644+03:00</SchedualDate>
+    <Duration>P3D</Duration>
+    <DeadlineDate>2024-05-12T00:00:00</DeadlineDate>
+    <Deliverables>Monitoring System</Deliverables>
+    <EngineerId xsi:nil="true" />
+    <ComplexityLevel>Intermediate</ComplexityLevel>
+  </Task>
+  <Task>
+    <Id>23</Id>
+    <Description>Provide User Training</Description>
+    <Alias>Train end-users on how to use the new application effectively.</Alias>
+    <IsMilestone>false</IsMilestone>
+    <CreatedAtDate>2024-04-05T20:21:06.7810726+03:00</CreatedAtDate>
+    <SchedualDate>2024-05-04T20:20:21.5603644+03:00</SchedualDate>
+    <Duration>P1D</Duration>
+    <DeadlineDate>2024-05-14T00:00:00</DeadlineDate>
+    <Deliverables>User Training Materials</Deliverables>
+    <EngineerId xsi:nil="true" />
+    <ComplexityLevel>Advanced</ComplexityLevel>
+  </Task>
+  <Task>
+    <Id>24</Id>
+    <Description>Create Marketing Materials</Description>
+    <Alias>Prepare marketing materials to promote the new application.</Alias>
+    <IsMilestone>false</IsMilestone>
+    <CreatedAtDate>2024-03-31T20:21:06.7919165+03:00</CreatedAtDate>
+    <SchedualDate>2024-05-07T20:20:21.5603644+03:00</SchedualDate>
+    <Duration>P2D</Duration>
+    <DeadlineDate>2024-05-14T00:00:00</DeadlineDate>
+    <Deliverables>Marketing Materials</Deliverables>
+    <EngineerId xsi:nil="true" />
+    <ComplexityLevel>Beginner</ComplexityLevel>
+  </Task>
+  <Task>
+    <Id>25</Id>
+    <Description>Launch Marketing Campaign</Description>
+    <Alias>Execute a marketing campaign to introduce the new application to the target audience.</Alias>
+    <IsMilestone>false</IsMilestone>
+    <CreatedAtDate>2024-03-29T20:21:06.8057614+03:00</CreatedAtDate>
+    <SchedualDate>2024-05-09T20:20:21.5603644+03:00</SchedualDate>
+    <Duration>P3D</Duration>
+    <DeadlineDate>2024-05-17T00:00:00</DeadlineDate>
+    <Deliverables>Marketing Campaign</Deliverables>
+    <EngineerId xsi:nil="true" />
+    <ComplexityLevel>Intermediate</ComplexityLevel>
+  </Task>
+  <Task>
+    <Id>27</Id>
+    <Description>Implement Feature Requests</Description>
+    <Alias>Incorporate user-requested features based on collected feedback.</Alias>
+    <IsMilestone>false</IsMilestone>
+    <CreatedAtDate>2024-03-29T20:21:06.8415714+03:00</CreatedAtDate>
+    <SchedualDate>2024-05-12T20:20:21.5603644+03:00</SchedualDate>
+    <Duration>P3D</Duration>
+    <DeadlineDate>2024-05-20T00:00:00</DeadlineDate>
+    <Deliverables>Enhanced Application</Deliverables>
+    <EngineerId xsi:nil="true" />
+    <ComplexityLevel>Expert</ComplexityLevel>
+  </Task>
+  <Task>
+    <Id>26</Id>
+    <Description>Collect User Feedback</Description>
+    <Alias>Gather feedback from users after the application is in use.</Alias>
+    <IsMilestone>false</IsMilestone>
+    <CreatedAtDate>2024-04-09T20:21:06.8241777+03:00</CreatedAtDate>
+    <SchedualDate>2024-05-05T20:20:21.5603644+03:00</SchedualDate>
+    <Duration>P3D</Duration>
+    <DeadlineDate>2024-05-17T00:00:00</DeadlineDate>
+    <Deliverables>User Feedback Reports</Deliverables>
+    <EngineerId xsi:nil="true" />
+    <ComplexityLevel>AdvancedBeginner</ComplexityLevel>
+  </Task>
+  <Task>
+    <Id>34</Id>
+    <Alias>M6</Alias>
+    <IsMilestone>true</IsMilestone>
+    <CreatedAtDate>2024-04-09T20:21:26.0748647+03:00</CreatedAtDate>
+    <SchedualDate>2024-04-15T20:20:21.5603644+03:00</SchedualDate>
+    <DeadlineDate>2024-04-21T00:00:00</DeadlineDate>
+    <EngineerId>0</EngineerId>
+    <ComplexityLevel>Beginner</ComplexityLevel>
+  </Task>
+  <Task>
+    <Id>10</Id>
+    <Description>Implement API Endpoints</Description>
+    <Alias>Create API endpoints for communication between frontend and backend.</Alias>
+    <IsMilestone>false</IsMilestone>
+    <CreatedAtDate>2024-04-05T20:21:06.6204214+03:00</CreatedAtDate>
+    <SchedualDate>2024-04-15T20:20:21.5603644+03:00</SchedualDate>
+    <Duration>P3D</Duration>
+    <DeadlineDate>2024-04-24T00:00:00</DeadlineDate>
+    <Deliverables>API Endpoints</Deliverables>
+    <EngineerId xsi:nil="true" />
+    <ComplexityLevel>Expert</ComplexityLevel>
+  </Task>
+  <Task>
+    <Id>11</Id>
+    <Description>Implement Error Handling</Description>
+    <Alias>Handle errors gracefully to enhance user experience.</Alias>
+    <IsMilestone>false</IsMilestone>
+    <CreatedAtDate>2024-04-02T20:21:06.636378+03:00</CreatedAtDate>
+    <SchedualDate>2024-04-15T20:20:21.5603644+03:00</SchedualDate>
+    <Duration>P3D</Duration>
+    <DeadlineDate>2024-04-24T00:00:00</DeadlineDate>
+    <Deliverables>Error Handling Mechanism</Deliverables>
+    <EngineerId xsi:nil="true" />
+    <ComplexityLevel>AdvancedBeginner</ComplexityLevel>
+  </Task>
+  <Task>
+    <Id>35</Id>
+    <Alias>M7</Alias>
+    <IsMilestone>true</IsMilestone>
+    <CreatedAtDate>2024-04-09T20:21:26.0871911+03:00</CreatedAtDate>
+    <SchedualDate>2024-04-18T20:20:21.5603644+03:00</SchedualDate>
+    <DeadlineDate>2024-04-24T00:00:00</DeadlineDate>
+    <EngineerId>0</EngineerId>
+    <ComplexityLevel>Beginner</ComplexityLevel>
+  </Task>
+  <Task>
+    <Id>12</Id>
+    <Description>Perform Unit Testing</Description>
+    <Alias>Test individual components and functions for correctness.</Alias>
+    <IsMilestone>false</IsMilestone>
+    <CreatedAtDate>2024-04-04T20:21:06.6487925+03:00</CreatedAtDate>
+    <SchedualDate>2024-04-18T20:20:21.5603644+03:00</SchedualDate>
+    <Duration>P1D</Duration>
+    <DeadlineDate>2024-04-25T00:00:00</DeadlineDate>
+    <Deliverables>Unit Test Reports</Deliverables>
+    <EngineerId xsi:nil="true" />
+    <ComplexityLevel>Advanced</ComplexityLevel>
+  </Task>
+  <Task>
+    <Id>37</Id>
+    <Alias>M9</Alias>
+    <IsMilestone>true</IsMilestone>
+    <CreatedAtDate>2024-04-09T20:21:26.1130563+03:00</CreatedAtDate>
+    <SchedualDate>2024-04-22T20:20:21.5603644+03:00</SchedualDate>
+    <DeadlineDate>2024-04-27T00:00:00</DeadlineDate>
+    <EngineerId>0</EngineerId>
+    <ComplexityLevel>Beginner</ComplexityLevel>
+  </Task>
+  <Task>
+    <Id>38</Id>
+    <Alias>M10</Alias>
+    <IsMilestone>true</IsMilestone>
+    <CreatedAtDate>2024-04-09T20:21:26.1225624+03:00</CreatedAtDate>
+    <SchedualDate>2024-04-25T20:20:21.5603644+03:00</SchedualDate>
+    <DeadlineDate>2024-04-30T00:00:00</DeadlineDate>
+    <EngineerId>0</EngineerId>
+    <ComplexityLevel>Beginner</ComplexityLevel>
+  </Task>
+  <Task>
+    <Id>39</Id>
+    <Alias>M11</Alias>
+    <IsMilestone>true</IsMilestone>
+    <CreatedAtDate>2024-04-09T20:21:26.1318332+03:00</CreatedAtDate>
+    <SchedualDate>2024-04-26T20:20:21.5603644+03:00</SchedualDate>
+    <DeadlineDate>2024-05-04T00:00:00</DeadlineDate>
+    <EngineerId>0</EngineerId>
+    <ComplexityLevel>Beginner</ComplexityLevel>
+  </Task>
+  <Task>
+    <Id>40</Id>
+    <Alias>M12</Alias>
+    <IsMilestone>true</IsMilestone>
+    <CreatedAtDate>2024-04-09T20:21:26.1413916+03:00</CreatedAtDate>
+    <SchedualDate>2024-04-28T20:20:21.5603644+03:00</SchedualDate>
+    <DeadlineDate>2024-05-03T00:00:00</DeadlineDate>
+    <EngineerId>0</EngineerId>
+    <ComplexityLevel>Beginner</ComplexityLevel>
+  </Task>
+  <Task>
+    <Id>41</Id>
+    <Alias>M13</Alias>
+    <IsMilestone>true</IsMilestone>
+    <CreatedAtDate>2024-04-09T20:21:26.1569797+03:00</CreatedAtDate>
+    <SchedualDate>2024-04-30T20:20:21.5603644+03:00</SchedualDate>
+    <DeadlineDate>2024-05-05T00:00:00</DeadlineDate>
+    <EngineerId>0</EngineerId>
+    <ComplexityLevel>Beginner</ComplexityLevel>
+  </Task>
+  <Task>
+    <Id>42</Id>
+    <Alias>M14</Alias>
+    <IsMilestone>true</IsMilestone>
+    <CreatedAtDate>2024-04-09T20:21:26.1775452+03:00</CreatedAtDate>
+    <SchedualDate>2024-05-02T20:20:21.5603644+03:00</SchedualDate>
+    <DeadlineDate>2024-05-07T00:00:00</DeadlineDate>
+    <EngineerId>0</EngineerId>
+    <ComplexityLevel>Beginner</ComplexityLevel>
+  </Task>
+  <Task>
+    <Id>43</Id>
+    <Alias>M15</Alias>
+    <IsMilestone>true</IsMilestone>
+    <CreatedAtDate>2024-04-09T20:21:26.1890515+03:00</CreatedAtDate>
+    <SchedualDate>2024-05-04T20:20:21.5603644+03:00</SchedualDate>
+    <DeadlineDate>2024-05-09T00:00:00</DeadlineDate>
+    <EngineerId>0</EngineerId>
+    <ComplexityLevel>Beginner</ComplexityLevel>
+  </Task>
+  <Task>
+    <Id>44</Id>
+    <Alias>M16</Alias>
+    <IsMilestone>true</IsMilestone>
+    <CreatedAtDate>2024-04-09T20:21:26.2002712+03:00</CreatedAtDate>
+    <SchedualDate>2024-05-07T20:20:21.5603644+03:00</SchedualDate>
+    <DeadlineDate>2024-05-12T00:00:00</DeadlineDate>
+    <EngineerId>0</EngineerId>
+    <ComplexityLevel>Beginner</ComplexityLevel>
+  </Task>
+  <Task>
+    <Id>45</Id>
+    <Alias>M17</Alias>
+    <IsMilestone>true</IsMilestone>
+    <CreatedAtDate>2024-04-09T20:21:26.2095336+03:00</CreatedAtDate>
+    <SchedualDate>2024-05-09T20:20:21.5603644+03:00</SchedualDate>
+    <DeadlineDate>2024-05-14T00:00:00</DeadlineDate>
+    <EngineerId>0</EngineerId>
+    <ComplexityLevel>Beginner</ComplexityLevel>
+  </Task>
+  <Task>
+    <Id>47</Id>
+    <Alias>M19</Alias>
+    <IsMilestone>true</IsMilestone>
+    <CreatedAtDate>2024-04-09T20:21:26.230883+03:00</CreatedAtDate>
+    <SchedualDate>2024-05-12T20:20:21.5603644+03:00</SchedualDate>
+    <DeadlineDate>2024-05-17T00:00:00</DeadlineDate>
+    <EngineerId>0</EngineerId>
+    <ComplexityLevel>Beginner</ComplexityLevel>
+  </Task>
+  <Task>
+    <Id>46</Id>
+    <Alias>M18</Alias>
+    <IsMilestone>true</IsMilestone>
+    <CreatedAtDate>2024-04-09T20:21:26.2193317+03:00</CreatedAtDate>
+    <SchedualDate>2024-05-05T20:20:21.5603644+03:00</SchedualDate>
+    <DeadlineDate>2024-05-14T00:00:00</DeadlineDate>
+    <EngineerId>0</EngineerId>
+    <ComplexityLevel>Beginner</ComplexityLevel>
+  </Task>
+  <Task>
+    <Id>48</Id>
+    <Alias>End</Alias>
+    <IsMilestone>true</IsMilestone>
+    <CreatedAtDate>2024-04-09T20:21:26.2422027+03:00</CreatedAtDate>
+    <SchedualDate>2024-05-15T20:20:21.5603644+03:00</SchedualDate>
+    <DeadlineDate>2024-05-20T00:00:00</DeadlineDate>
+    <EngineerId>0</EngineerId>
+    <ComplexityLevel>Beginner</ComplexityLevel>
+  </Task>
+  <Task>
+    <Id>1</Id>
+    <Description>Define Project Scope</Description>
+    <Alias>Gather requirements and define the scope of the project.</Alias>
+    <IsMilestone>false</IsMilestone>
+    <CreatedAtDate>2024-04-02T20:21:06.5273129+03:00</CreatedAtDate>
+    <StartDate>2024-04-10T09:47:13.9889369+03:00</StartDate>
+    <SchedualDate>2024-04-09T20:20:21.5603644+03:00</SchedualDate>
+    <Duration>P2D</Duration>
+    <DeadlineDate>2024-04-16T00:00:00</DeadlineDate>
+    <Deliverables>Project Scope Document</Deliverables>
+    <EngineerId>325907210</EngineerId>
+    <ComplexityLevel>AdvancedBeginner</ComplexityLevel>
+  </Task>
+</ArrayOfTask>
